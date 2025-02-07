@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Main Navigation Bar (White) */
+.navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+    
+}
+
+.navigationBar  a {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigationBar .searchTool {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.searchIcon{
+    margin-left: -3rem;
+}
+
+.searchTool select, 
+.searchTool input {
+    background: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.searchTool input {
+    width: 250px;
+}
+
+.searchTool button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Icons (Profile, Cart, Wishlist) */
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Contact Information */
+.call {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007aff;
+}
+
+/* Blue Navigation Bar */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5a45e9;
+    padding: 10px 5%;
+}
+
+.navBar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navBar li {
+    list-style: none;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}

@@ -1,0 +1,82 @@
+.vendors-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin:0,auto;
+}
+
+.vendors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 32px;
+  padding: 16px;
+}
+
+.vendor-card {
+  background: white;
+  border-radius: 16px; 
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+  position: relative;
+  margin-bottom: 16px;
+  padding: 16px; 
+}
+
+.vendor-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.vendorInfo {
+  position: relative;
+  z-index: 1;
+}
+
+.vendor-name {
+  margin: 12px 0 8px;
+  font-size: 24px;
+  color: rgb(5, 5, 5);
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.rating {
+  margin-bottom: 8px;
+}
+
+.star {
+  color: #ffd700;
+  margin-right: 2px;
+  font-size: 18px;}
+
+.star.empty {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.location {
+  font-size: 14px;
+}
+
+.location p {
+  margin: 0;
+  color: rgb(21, 20, 20);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1;
+}
+
+.profile-image img {
+  width: 56px; 
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

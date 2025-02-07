@@ -1,0 +1,206 @@
+/* General Page Layout */
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2rem;
+    
+    
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Trending Categories (Sidebar) */
+.trendingCategories {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+}
+
+.trendingCategories ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trendingCategories li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 5px 0;
+    color: black;
+}
+
+/* Explore Latest */
+.exploreLatest {
+    margin: 3rem auto;
+    text-align: left;
+    max-width: 800px;
+}
+
+.exploreLatest h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.exploreLatest p {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.exploreLatest .shopNow {
+    background-color: #5f5d5d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+/* Sections */
+.section {
+    width: 90%;
+    max-width: 1200px;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Category Cards */
+.categoryCard  a{
+    text-decoration: none;
+}
+
+.hideDescription{
+    visibility: hidden;
+}
+
+/* Product Card */
+.productCard {
+    text-align: center;
+    position: relative;
+    background: #fff;
+    padding: 15px;
+}
+
+/* Image Container */
+.imageContainer {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.imageContainer img {
+    width: 100%;
+    display: block;
+}
+
+/* Overlay Buttons (Hidden by Default) */
+.buttonsContainer {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+    opacity: 0;
+   justify-content: space-between;
+}
+
+.button{
+    width: 200%;
+}
+.buttonCart,
+.button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+   
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.buttonCart:hover,
+.button:hover {
+    background-color: #333;
+}
+
+/* Show Buttons on Hover */
+.imageContainer:hover .buttonsContainer {
+    opacity: 1;
+}
+
+/* Product Info */
+h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Star Ratings */
+.ratings {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.star {
+    color: #FFA500; /* Orange star color */
+    font-size: 18px;
+}
+
+.categoryCard, .productCard, .vendorCard {
+    background: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.productCard {
+    padding-top:1rem ;
+    
+}
+
+.categoryCard img, .productCard img, .vendorCard img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.star{
+    color: goldenrod;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}

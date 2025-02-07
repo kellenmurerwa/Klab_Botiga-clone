@@ -1,0 +1,99 @@
+.map {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:10px;
+ }
+  
+.maplocation {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.contactsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    
+  }
+  
+.UserInfo {
+    display: flex;
+    flex-direction: row;
+    
+   
+  }
+
+.firstName{  
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight:500;
+    margin-bottom: 25px;
+  }
+h3{
+    font-size: 1.1rem;
+    font-weight:500;
+    margin-bottom: 25px;
+}
+p{
+    margin-bottom: 15px ;
+    color: #000;
+}
+  
+.registrationForm textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+.registrationForm textarea {
+    width: 100%;  
+    height: 200px;  
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+  
+.registrationForm button {
+    background-color: #561ce8;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 20%;
+  }
+  
+.Address {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    justify-content: space-between;
+  }
+.Address p{
+    display: flex;
+    flex-direction: column;
+}   
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
