@@ -31,7 +31,6 @@ function Navbar(){
          <div className="icons">
                 <LuUserRound onClick={handleModelState} className="user"/>
                 
-                
                 <CgShoppingBag />
                 
                 <RiHeartLine />

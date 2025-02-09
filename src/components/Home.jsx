@@ -89,10 +89,12 @@ const Home = () =>
                 <h2>Popular Categories</h2>
                 <div className="grid">
                     {popularCategories.map((category) => (
+                        <div className="popularCategoryContainer">
                         <Link to={category.link} key={category.name}className="categoryCard">
                             <img src={category.image} alt={category.name} />
-                            <h3>{category.name}</h3>
                         </Link>
+                         <h3>{category.name}</h3>
+                        </div>
                     ))}
                 </div>
             </section>
@@ -111,27 +113,27 @@ const Home = () =>
                     
                     <div className="buttonsContainer">
                         <button type="button" className="buttonCart" onClick={() => HandleNavigate(item.id)}>
-                            Add to Cart
+                            Select Options
                         </button>
                         <button type="button" className="button" onClick={() => HandleNavigate(item.id)}>
                             Quick View
                         </button> 
                     </div>
                 </div>  
-
+                <div className="DetailContainer">
               
-                <h3>{item.name}</h3>
-                <p className="price">${item.price.from} - ${item.price.to}</p>
+                    <h3>{item.name}</h3>
+                    <p className="price">${item.price.from} - ${item.price.to}</p>
+                    
                 
-               
-                <div className="ratings">
-                    <FaStar className="star" />
-                    <FaStar className="star" />
-                    <FaStar className="star" />
-                    <FaStar className="star" />
-                    <FaStar className="star" />
+                    <div className="ratings">
+                        <FaStar className="star" />
+                        <FaStar className="star" />
+                        <FaStar className="star" />
+                        <FaStar className="star" />
+                        <FaStar className="star" />
+                    </div>
                 </div>
-
                 
                 <div className="hideDescription">{item.description}</div>
             </div>

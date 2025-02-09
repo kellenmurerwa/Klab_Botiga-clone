@@ -12,6 +12,10 @@
     flex-direction: row;
 }
 
+.popularCategoryContainer {
+    text-align: center;
+}
+
 
 /* Trending Categories (Sidebar) */
 .trendingCategories {
@@ -84,9 +88,11 @@
 }
 
 /* Category Cards */
-.categoryCard  a{
+/* .categoryCard img {
     text-decoration: none;
-}
+    width: 100%;
+} */
+
 
 .hideDescription{
     visibility: hidden;
@@ -181,10 +187,18 @@ h3 {
     text-align: center;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
 }
 .productCard {
     padding-top:1rem ;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
     
+}
+.DetailContainer{
+    align-items: left;
+    width: 50%;
 }
 
 .categoryCard img, .productCard img, .vendorCard img {
@@ -192,10 +206,6 @@ h3 {
     height: 15rem;
     object-fit: cover;
     border-radius: 8px;
-}
-
-.star{
-    color: goldenrod;
 }
 
 /* Responsive Design */
