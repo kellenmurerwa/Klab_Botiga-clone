@@ -35,10 +35,11 @@ const Vendors = () => {
     <div className="vendors-container">
       <h2>Store List</h2>
       <div className="vendors-grid">
-        {vendors.map((vendor, index) => (
-          <div key={index} className="vendor-card">
+        {vendors.map(vendor => (
+          <div key={vendor.id} className="vendor-card">
+            <div className ='vendor-image' style ={{backgroundImage: `url(${vendor.image})`}}>
             <div className="vendorInfo">
-              <img src={vendor.image} alt={vendor.name} className="vendor-image" />
+        
               <h3 className="vendor-name">{vendor.name}</h3>
               <div className="rating">{renderStars(vendor.ratings)}</div>
               <div className="location">
@@ -50,8 +51,9 @@ const Vendors = () => {
               </div>
             </div>
             <div className="profile-image">
-              <img src={vendor.profileImage} alt={` ${vendor.name} profile`} />
+              <img src={vendor.profileImage} alt={`${vendor.name} profile`} />
             </div>
+          </div>
           </div>
         ))}
       </div>

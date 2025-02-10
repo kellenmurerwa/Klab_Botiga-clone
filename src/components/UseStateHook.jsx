@@ -7,7 +7,7 @@ const UseStateHook = ({ handleModelState }) => {
 
     return (
         <div className="overlay" onClick={handleModelState}>
-            <div className="formContainer" onClick={(e) => e.stopPropagation()}>
+            <div className="formContainer" onClick={(formItem) => formItem.stopPropagation()}>
                 <div className="closeIcon">
                     <h2>{isSignUp ? "Sign Up" : "Log In"}</h2>
                     <IoClose onClick={handleModelState} />
